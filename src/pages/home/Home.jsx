@@ -96,7 +96,7 @@ export default function Home() {
   }
 
   if (!user) {
-    navigate("/landing");
+    navigate("/");
   }
 
   if (user) {

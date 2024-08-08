@@ -17,25 +17,27 @@ export default function Landing() {
   }
   if (user) {
     navigate("/home");
-  } else {
-    return (
-      <div className="landing">
-        <div className="content col-12 col-md-6   ">
-          <img src={logo} alt="" height={"230px"} />
-          <p>
-            here you can organize all your tasks <br />
-            many feature are here.... <br />
-            wat TODO with TODO?
-          </p>
-          <div className="btns">
-            <button onClick={() => navigate("/signin")}>sign in</button>
-            <button onClick={() => navigate("/signup")}>sign up</button>
-          </div>
-        </div>
-        <div className="img col-12 col-md-6  ">
-          <img src={landingimg} alt="" className="landimg" />
+  }
+  if (!user) {
+    navigate("/");
+  }
+  return (
+    <div className="landing">
+      <div className="content col-12 col-md-6   ">
+        <img src={logo} alt="" height={"230px"} />
+        <p>
+          here you can organize all your tasks <br />
+          many feature are here.... <br />
+          want TODO with TODO?
+        </p>
+        <div className="btns">
+          <button onClick={() => navigate("/signin")}>sign in</button>
+          <button onClick={() => navigate("/signup")}>sign up</button>
         </div>
       </div>
-    );
-  }
+      <div className="img col-12 col-md-6  ">
+        <img src={landingimg} alt="" className="landimg" />
+      </div>
+    </div>
+  );
 }

@@ -115,6 +115,7 @@ input::placeholder {
   text-decoration: none;
   margin: 5px 0;
   font-size: 0.9rem;
+  cursor: pointer;
 }
 
 .account span:hover {

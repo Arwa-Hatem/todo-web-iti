@@ -129,6 +129,7 @@
 }
 .account span {
   color: #ffffff;
+  cursor: pointer;
 
   text-decoration: none;
   margin: 5px 0;
