@@ -1,0 +1,145 @@
+.content {
+  padding: 100px;
+}
+
+.inputs .input {
+  background-color: #12748a;
+  border: none;
+  border-radius: 20px;
+  width: 400px;
+  height: 50px;
+  padding: 0.5em;
+
+  color: #ffffff;
+}
+.inputs {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  gap: 1em;
+  position: relative;
+}
+.add {
+  position: absolute;
+  bottom: 13px;
+  right: 45px;
+  font-size: 1.5rem;
+
+  color: #ffffff;
+  background-color: #12748a;
+  border-radius: 20px;
+  border: none;
+}
+.addcon {
+  position: relative;
+}
+
+.btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btns button {
+  background-color: #12748a;
+  color: #ffffff;
+  margin-left: 1em;
+  border-radius: 20px;
+  border: none;
+}
+
+.title-input {
+  background-color: transparent;
+  border: none;
+  color: white;
+
+  align-items: flex-start;
+  text-align: left;
+  margin-left: 1em;
+}
+.task-view h3 {
+  border-bottom: #ffffff solid 1px;
+  text-align: left;
+}
+
+.fa-pen-to-square {
+  font-size: 18px;
+  transition: 0.2s;
+}
+
+.fa-pen-to-square:hover {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.sub-task {
+  max-width: 620px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.parent-time {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.time {
+  font-size: 12px;
+  color: rgb(164, 213, 255);
+}
+
+#checkbox {
+  width: 18px;
+  height: 18px;
+
+  accent-color: rgb(26, 156, 156);
+}
+
+label {
+  font-size: 17px;
+  margin-left: 11px;
+
+  position: relative;
+  bottom: 3px;
+}
+
+.card-task {
+  box-shadow: 0 5px 30px 0 rgb(0 0 0 / 15%);
+  background: #12748a;
+  width: 100%;
+
+  align-items: flex-start;
+  margin-left: 0px;
+
+  border-radius: 5px;
+  transition: 0.2s;
+
+  justify-content: space-between;
+}
+.card-task li {
+  list-style-type: none;
+}
+
+.fa-trash {
+  padding-right: 19px;
+  color: rgb(237, 181, 181);
+}
+
+.add-more-btn {
+  background-color: teal;
+  font-size: 16px;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+}
+
+.delete {
+  border-radius: 5px;
+  border: none;
+}
+
+@media (max-width: 1010px) {
+  .content {
+    width: auto;
+  }
+}

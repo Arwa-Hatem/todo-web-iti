@@ -1,0 +1,31 @@
+.taskview {
+  width: 600px;
+  height: 350px;
+  position: relative;
+}
+.taskview h1 {
+  text-align: left;
+  margin: 1em;
+  border-bottom: 1px solid #ffffff;
+}
+.taskview p {
+  text-align: left;
+  list-style-type: circle;
+  margin-left: 3em;
+}
+.close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin-right: 1em;
+
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+@media (max-width: 705px) {
+  .taskview {
+    width: 300px;
+    height: 200px;
+  }
+}
